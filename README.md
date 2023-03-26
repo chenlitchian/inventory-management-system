@@ -14,15 +14,25 @@ pip install -r requirements.txt
 ```
 
 
-create .env file and copy your aws dynamo db access key
-
+create config.py file and copy your aws dynamo db access key
+```
 AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID>
 AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
 REGION_NAME=<REGION_NAME>
+```
+
 
 ### Run
 
 To run the server:
 ```
 python3 main.py
+```
+
+
+### Deploy
+
+To deploy to AWS lambda:
+```
+serverless deploy
 ```
