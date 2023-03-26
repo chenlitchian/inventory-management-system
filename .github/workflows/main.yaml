@@ -21,16 +21,16 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Install Serverless
       run: npm install -g serverless
-    - name: Install Serverless plugin
-      run: serverless plugin install -n serverless-wsgi
-    - name: Install Serverless plugin
-      run: serverless plugin install -n serverless-python-requirements
-    - uses: actions/checkout@v3
+    - name: Use Python 3.8 
     - uses: actions/setup-python@v4
       with:
         python-version: '3.8'
     - name: Install Dependency
       run: pip install -r requirements.txt
+    - name: Install Serverless WSGI plugin
+      run: sls plugin install -n serverless-wsgi
+    - name: Install Serverless python reqirement plugin
+      run: sls plugin install -n serverless-python-requirements
     - name: serverless deploy
       uses: serverless/github-action@master
       with:
