@@ -21,10 +21,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Install Serverless
       run: npm install -g serverless
-    - name: Use Python 3.6 
+    - name: Use Python 3.9 
       uses: actions/setup-python@v4
       with:
-        python-version: '3.6'
+        python-version: '3.9'
     - name: Install Dependency
       run: pip install -r requirements.txt
     - name: Install Serverless WSGI plugin
