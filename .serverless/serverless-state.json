@@ -195,7 +195,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/ims/dev/1679828779284-2023-03-26T11:06:19.284Z/ims.zip"
+                "S3Key": "serverless/ims/dev/1679835781233-2023-03-26T13:03:01.233Z/ims.zip"
               },
               "Handler": "wsgi_handler.handler",
               "Runtime": "python3.8",
@@ -213,14 +213,14 @@
               "AppLogGroup"
             ]
           },
-          "AppLambdaVersionTR9WtXxsHHuJdSSONSe1C0tTX5cTUhD4afpmCs0Go": {
+          "AppLambdaVersionljEQhknxPOui52YSocgPj0p8i4J4W6jimzHr3lWqsI": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AppLambdaFunction"
               },
-              "CodeSha256": "sdm4Y9w/1JLk09ygq/WRxnkctBGlKpwiKNrtoZ5CX1M="
+              "CodeSha256": "ky8q+XCwebICXDxoOR5+lIJXeqEaJqkqc0aSM3DKfnE="
             }
           },
           "ApiGatewayRestApi": {
@@ -345,7 +345,7 @@
               "AppLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1679828770843": {
+          "ApiGatewayDeployment1679835771317": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -408,7 +408,7 @@
           "AppLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AppLambdaVersionTR9WtXxsHHuJdSSONSe1C0tTX5cTUhD4afpmCs0Go"
+              "Ref": "AppLambdaVersionljEQhknxPOui52YSocgPj0p8i4J4W6jimzHr3lWqsI"
             },
             "Export": {
               "Name": "sls-ims-dev-AppLambdaFunctionQualifiedArn"
@@ -554,7 +554,7 @@
         "timeout": 6,
         "runtime": "python3.8",
         "vpc": {},
-        "versionLogicalId": "AppLambdaVersionTR9WtXxsHHuJdSSONSe1C0tTX5cTUhD4afpmCs0Go"
+        "versionLogicalId": "AppLambdaVersionljEQhknxPOui52YSocgPj0p8i4J4W6jimzHr3lWqsI"
       }
     },
     "configValidationMode": "warn",
@@ -576,7 +576,7 @@
           ".serverless-wsgi"
         ],
         "artifact": "/home/chen/Documents/development/inventory-management-system/.serverless/ims.zip",
-        "artifactDirectoryName": "serverless/ims/dev/1679828779284-2023-03-26T11:06:19.284Z"
+        "artifactDirectoryName": "serverless/ims/dev/1679835781233-2023-03-26T13:03:01.233Z"
       },
       "plugins": {
         "$ref": "$[\"service\"][\"plugins\"]"
@@ -593,7 +593,7 @@
     "artifact": "/home/chen/Documents/development/inventory-management-system/.serverless/ims.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/ims/dev/1679828779284-2023-03-26T11:06:19.284Z",
+    "artifactDirectoryName": "serverless/ims/dev/1679835781233-2023-03-26T13:03:01.233Z",
     "artifact": "ims.zip"
   }
 }
