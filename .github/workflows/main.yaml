@@ -19,6 +19,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: Install Serverless
+      run: npm install -g serverless
     - name: Install Serverless plugin
       run: serverless plugin install -n serverless-wsgi
     - name: Install Serverless plugin
