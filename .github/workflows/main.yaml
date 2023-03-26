@@ -19,6 +19,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: Install Serverless plugin
+      run: serverless plugin install -n serverless-wsgi
+    - name: Install Serverless plugin
+      run: serverless plugin install -n serverless-python-requirements
+    - name: Install Dependency
+      run: pip install -r requirements.txt
     - name: serverless deploy
       uses: serverless/github-action@master
       with:
