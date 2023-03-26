@@ -29,9 +29,9 @@ jobs:
     - name: create config file
       run: |
             touch config.py
-            echo AWS_ACCESS_KEY_ID='${{ secrets.AWS_ACCESS_KEY_ID }}' >> config.py
-            echo AWS_SECRET_ACCESS_KEY='${{ secrets.AWS_SECRET_ACCESS_KEY }}' >> config.py
-            echo REGION_NAME='${{ secrets.REGION_NAME }}' >> config.py
+            echo AWS_ACCESS_KEY_ID=\'${{ secrets.AWS_ACCESS_KEY_ID }}\' >> config.py
+            echo AWS_SECRET_ACCESS_KEY=\'${{ secrets.AWS_SECRET_ACCESS_KEY }}\' >> config.py
+            echo REGION_NAME=\'${{ secrets.REGION_NAME }}\' >> config.py
 
     - name: Install Serverless
       run: npm install -g serverless
