@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def items():
-    items = get_items()
-    return items
+    # items = get_items()
+    return "Hello World"
 
 
 @app.route('/insert', methods=['POST'])

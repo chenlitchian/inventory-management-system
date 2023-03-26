@@ -16,9 +16,11 @@ from app.model.item import InventoryItem
 logger = logging.getLogger(__name__)
 load_dotenv()
 
-AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
-AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
-REGION_NAME = os.environ.get("REGION_NAME")
+from config import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, REGION_NAME
+
+# AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
+# AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
+# REGION_NAME = os.environ.get("REGION_NAME")
 
 resource = resource(
     'dynamodb',
