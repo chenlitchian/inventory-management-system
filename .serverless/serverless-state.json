@@ -6,7 +6,7 @@
     },
     "provider": {
       "name": "aws",
-      "runtime": "python3.8",
+      "runtime": "python3.9",
       "region": "ap-southeast-2",
       "memorySize": 128,
       "iam": {
@@ -195,10 +195,10 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/ims/dev/1679835781233-2023-03-26T13:03:01.233Z/ims.zip"
+                "S3Key": "serverless/ims/dev/1679836628697-2023-03-26T13:17:08.697Z/ims.zip"
               },
               "Handler": "wsgi_handler.handler",
-              "Runtime": "python3.8",
+              "Runtime": "python3.9",
               "FunctionName": "ims-dev-app",
               "MemorySize": 128,
               "Timeout": 6,
@@ -213,14 +213,14 @@
               "AppLogGroup"
             ]
           },
-          "AppLambdaVersionljEQhknxPOui52YSocgPj0p8i4J4W6jimzHr3lWqsI": {
+          "AppLambdaVersion7Vs63cZDBHQujctFtWh2L7g4ILFaqnxQkfGk1u411rM": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AppLambdaFunction"
               },
-              "CodeSha256": "ky8q+XCwebICXDxoOR5+lIJXeqEaJqkqc0aSM3DKfnE="
+              "CodeSha256": "V6b8wjRt7eCvMAxvK1Vnk8Fkv6XIDqPlzUh/tcNi+78="
             }
           },
           "ApiGatewayRestApi": {
@@ -345,7 +345,7 @@
               "AppLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1679835771317": {
+          "ApiGatewayDeployment1679836620260": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -408,7 +408,7 @@
           "AppLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AppLambdaVersionljEQhknxPOui52YSocgPj0p8i4J4W6jimzHr3lWqsI"
+              "Ref": "AppLambdaVersion7Vs63cZDBHQujctFtWh2L7g4ILFaqnxQkfGk1u411rM"
             },
             "Export": {
               "Name": "sls-ims-dev-AppLambdaFunctionQualifiedArn"
@@ -552,9 +552,9 @@
         "package": {},
         "memory": 128,
         "timeout": 6,
-        "runtime": "python3.8",
+        "runtime": "python3.9",
         "vpc": {},
-        "versionLogicalId": "AppLambdaVersionljEQhknxPOui52YSocgPj0p8i4J4W6jimzHr3lWqsI"
+        "versionLogicalId": "AppLambdaVersion7Vs63cZDBHQujctFtWh2L7g4ILFaqnxQkfGk1u411rM"
       }
     },
     "configValidationMode": "warn",
@@ -576,7 +576,7 @@
           ".serverless-wsgi"
         ],
         "artifact": "/home/chen/Documents/development/inventory-management-system/.serverless/ims.zip",
-        "artifactDirectoryName": "serverless/ims/dev/1679835781233-2023-03-26T13:03:01.233Z"
+        "artifactDirectoryName": "serverless/ims/dev/1679836628697-2023-03-26T13:17:08.697Z"
       },
       "plugins": {
         "$ref": "$[\"service\"][\"plugins\"]"
@@ -593,7 +593,7 @@
     "artifact": "/home/chen/Documents/development/inventory-management-system/.serverless/ims.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/ims/dev/1679835781233-2023-03-26T13:03:01.233Z",
+    "artifactDirectoryName": "serverless/ims/dev/1679836628697-2023-03-26T13:17:08.697Z",
     "artifact": "ims.zip"
   }
 }
